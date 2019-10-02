@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List</title>
+</head>
+<body>
+	<ol>
+	{% for page in pages %}
+            <a href="{{ page.get_absolute_url}}">
+             
+                <h2>
+                    <li>{{page.title}}</li>
+                </h2>
+            </a>
+        {% endfor %}
+    </ol>
+</body>
+</html>
